@@ -1,0 +1,56 @@
+
+<header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Start Bootstrap</span>
+                        <hr class="star-light">
+                        <span class="skills"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<%- model_class = Produto -%>
+<section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2><%=t '.title', :default => Produto %></h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="fieldset">
+  <dl>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:nome) %></dt>
+      <dd><pre class="prettyprint"><%= @produto.nome %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:desc) %></dt>
+      <dd><pre class="prettyprint"><%= @produto.desc %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:preco) %></dt>
+      <dd><pre class="prettyprint"><%= @produto.preco %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:estoque) %></dt>
+      <dd><pre class="prettyprint"><%= @produto.estoque %></pre></dd>
+  </dl>
+</div>
+
+<div class="form-group">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              produtos_path, :class => 'btn btn-default'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_produto_path(@produto), :class => 'btn btn-default' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              produto_path(@produto),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
+                </div>
+               
+            </div>
+        </div>
+    </section>

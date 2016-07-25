@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  desc: MyText
+  preco: 1.5
+  estoque: 1
+  user_id: 
+
+two:
+  nome: MyString
+  desc: MyText
+  preco: 1.5
+  estoque: 1
+  user_id: 

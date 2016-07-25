@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @caixa.nome %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @caixa.valor %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @caixa.data %>
+</p>
+
+<%= link_to 'Edit', edit_caixa_path(@caixa) %> |
+<%= link_to 'Back', caixas_path %>

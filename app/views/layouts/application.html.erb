@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fdcwebapp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script src='http://www.google.com/jsapi'></script>;
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/></head>
+<body>
+  <div id="wrapper">
+
+<%= render partial: "elements/navbar" %>
+<%= bootstrap_flash %>
+
+
+<%= yield %>
+
+  </div>
+  
+  
+  
+  
+</body>
+</html>
