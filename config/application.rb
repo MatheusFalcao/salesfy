@@ -7,11 +7,6 @@ require 'rails/all'
 #Bundler.require(*Rails.groups)
 Bundler.require(:default, :assets, Rails.env)
 
-#Added to fix devise/active admin issue ?
-config.assets.initialize_on_precompile = false
-
-# Precompile additional assets. Defaults to [application.js, application.css, non-JS/CSS]
-config.assets.precompile += ['active_admin.css.scss', 'active_admin.js'] 
 
 module Fdcwebapp
   class Application < Rails::Application
