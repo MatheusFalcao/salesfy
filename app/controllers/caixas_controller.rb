@@ -3,7 +3,7 @@ class CaixasController < InheritedResources::Base
 
   def balanco
     @usuario = User.find_by_api_key(params[:api_key])
-    @caixa = Caixa.where(:id params[:id])
+    @caixa = Caixa.where(params[:id])
 
     @caixa.valor = params[:valor]
     @caixa.data = params[:data]
