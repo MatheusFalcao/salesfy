@@ -16152,3 +16152,230 @@ Started GET "/assets/active_admin.js?body=1" for 187.13.147.155 at 2016-07-25 19
 
 
 Started GET "/assets/active_admin/print.css?body=1" for 187.13.147.155 at 2016-07-25 19:21:22 +0000
+
+
+Started GET "/" for 177.135.129.122 at 2016-08-02 16:38:23 +0000
+
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (147.3ms)
+
+
+Started GET "/" for 177.135.129.122 at 2016-08-02 16:40:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Webapp::DashboardController#index as HTML
+Completed 401 Unauthorized in 26ms
+
+
+Started GET "/webapp/login" for 177.135.129.122 at 2016-08-02 16:40:56 +0000
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/bundler/gems/activeadmin-0e09bfd81a57/app/views/active_admin/devise/shared/_links.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/bundler/gems/activeadmin-0e09bfd81a57/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (174.8ms)
+Completed 200 OK in 1098ms (Views: 1006.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:57 +0000
+
+
+Started GET "/assets/active_admin.css?body=1" for 177.135.129.122 at 2016-08-02 16:40:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:57 +0000
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:57 +0000
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:57 +0000
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:57 +0000
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:57 +0000
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:58 +0000
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:58 +0000
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:58 +0000
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:58 +0000
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:58 +0000
+
+
+Started GET "/assets/jquery-ui/tabs.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:58 +0000
+
+
+Started GET "/assets/active_admin/jquery_ui.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:58 +0000
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/lib/flash.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/lib/per_page.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/initializers/batch_actions.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/initializers/datepicker.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/initializers/filters.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/initializers/tabs.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin.js?body=1" for 177.135.129.122 at 2016-08-02 16:40:59 +0000
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 177.135.129.122 at 2016-08-02 16:41:00 +0000
+
+
+Started POST "/webapp/login" for 177.135.129.122 at 2016-08-02 16:41:21 +0000
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LkHtvpiExvjlubfB4RAYjZ4S/sTfD0CQyy/jQf9ozR0=", "user"=>{"email"=>"maatheusfalcao@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (93.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'maatheusfalcao@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 1  [["current_sign_in_at", "2016-08-02 16:41:21.411423"], ["current_sign_in_ip", "177.135.129.122"], ["sign_in_count", 2], ["updated_at", "2016-08-02 16:41:21.413473"]]
+  [1m[36m (8.4ms)[0m  [1mCOMMIT[0m
+Redirected to https://salesfy-backend-matheusfalcao.c9users.io/
+Completed 302 Found in 426ms (ActiveRecord: 103.5ms)
+
+
+Started GET "/" for 177.135.129.122 at 2016-08-02 16:41:21 +0000
+Processing by Webapp::DashboardController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProduto Load (12.6ms)[0m  [1mSELECT  "produtos".* FROM "produtos"  WHERE "produtos"."user_id" = $1  ORDER BY "produtos"."id" DESC LIMIT 5[0m  [["user_id", 1]]
+  [1m[35mVenda Load (2.8ms)[0m  SELECT  "vendas".* FROM "vendas"  WHERE "vendas"."user_id" = $1  ORDER BY "vendas"."id" DESC LIMIT 5  [["user_id", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/bundler/gems/activeadmin-0e09bfd81a57/app/views/active_admin/page/index.html.arb (890.4ms)
+Completed 200 OK in 910ms (Views: 879.4ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/webapp/caixas" for 177.135.129.122 at 2016-08-02 16:41:25 +0000
+Processing by Webapp::CaixasController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (4.9ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "caixas"  WHERE "caixas"."user_id" = $1 LIMIT 30 OFFSET 0) subquery_for_count  [["user_id", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/bundler/gems/activeadmin-0e09bfd81a57/app/views/active_admin/resource/index.html.arb (544.4ms)
+Completed 200 OK in 614ms (Views: 554.5ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 177.135.129.122 at 2016-08-02 16:41:26 +0000
+
+
+Started GET "/webapp/produtos" for 177.135.129.122 at 2016-08-02 16:41:27 +0000
+Processing by Webapp::ProdutosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "produtos"  WHERE "produtos"."user_id" = $1 LIMIT 30 OFFSET 0) subquery_for_count  [["user_id", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/bundler/gems/activeadmin-0e09bfd81a57/app/views/active_admin/resource/index.html.arb (436.8ms)
+Completed 200 OK in 465ms (Views: 459.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/webapp/vendas" for 177.135.129.122 at 2016-08-02 16:41:29 +0000
+Processing by Webapp::VendasController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "vendas"  WHERE "vendas"."user_id" = $1 LIMIT 30 OFFSET 0) subquery_for_count  [["user_id", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/bundler/gems/activeadmin-0e09bfd81a57/app/views/active_admin/resource/index.html.arb (510.7ms)
+Completed 200 OK in 527ms (Views: 520.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/webapp/dashboard" for 177.135.129.122 at 2016-08-02 16:41:31 +0000
+Processing by Webapp::DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProduto Load (0.7ms)[0m  SELECT  "produtos".* FROM "produtos"  WHERE "produtos"."user_id" = $1  ORDER BY "produtos"."id" DESC LIMIT 5  [["user_id", 1]]
+  [1m[36mVenda Load (0.3ms)[0m  [1mSELECT  "vendas".* FROM "vendas"  WHERE "vendas"."user_id" = $1  ORDER BY "vendas"."id" DESC LIMIT 5[0m  [["user_id", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/bundler/gems/activeadmin-0e09bfd81a57/app/views/active_admin/page/index.html.arb (501.1ms)
+Completed 200 OK in 519ms (Views: 513.9ms | ActiveRecord: 1.8ms)
