@@ -51,3 +51,4 @@ gem 'tzinfo-data'
 gem 'activeadmin', github: 'activeadmin'
 gem 'pg'
 gem 'google_visualr'
+gem 'rails_12factor', group: :production
